@@ -45,6 +45,15 @@
      <Compile Include="Assets\Graphics\VFX\OccaSoftware\Enflame\Scripts\VolumetricFire.cs" />
      <Compile Include="Assets\Graphics\VFX\OccaSoftware\Enflame\Scripts\OscillateLightBrightness.cs" />
      <Compile Include="Assets\Graphics\Environment\LowPolyEarth\EarthSpinScript.cs" />
+     <Compile Include="Assets\Scripts\Features\Player\Bootstrap\PlayerInstaller.cs" />
+     <Compile Include="Assets\Scripts\Features\Player\Configs\PlayerConfig.cs" />
+     <Compile Include="Assets\Scripts\Features\Player\Factories\PlayerFactory.cs" />
+     <Compile Include="Assets\Scripts\Features\Player\Messages\PlayerSignals.cs" />
+     <Compile Include="Assets\Scripts\Features\Player\Views\PlayerView.cs" />
+     <Compile Include="Assets\Scripts\Features\Player\Rules\PlayerRules.cs" />
+     <Compile Include="Assets\Scripts\Features\Player\Data\PlayerResources.cs" />
+     <Compile Include="Assets\Scripts\Features\Config\LevelConfig.cs" />
+     <Compile Include="Assets\Scripts\Features\Player\Bootstrap\ConfigsInstaller.cs" />
      <None Include="Assets\Graphics\VFX\TSF\Shaders\TSF.shader" />
      <None Include="Assets\Graphics\VFX\ToonShader\Shaders\ToonShaderCustomInstancedInput.hlsl" />
      <None Include="Assets\Graphics\VFX\ToonShader\Shaders\ToonShaderCustomInstanced.shader" />
