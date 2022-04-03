@@ -45,7 +45,11 @@
      <Compile Include="Assets\Graphics\VFX\OccaSoftware\Enflame\Scripts\VolumetricFire.cs" />
      <Compile Include="Assets\Graphics\VFX\OccaSoftware\Enflame\Scripts\OscillateLightBrightness.cs" />
      <Compile Include="Assets\Graphics\Environment\LowPolyEarth\EarthSpinScript.cs" />
+     <None Include="Assets\Graphics\VFX\TSF\Shaders\TSF.shader" />
+     <None Include="Assets\Graphics\VFX\ToonShader\Shaders\ToonShaderCustomInstancedInput.hlsl" />
+     <None Include="Assets\Graphics\VFX\ToonShader\Shaders\ToonShaderCustomInstanced.shader" />
      <None Include="Assets\Graphics\VFX\_Creepy_Cat\3D Games Effects Pack Free\Example_02\Help Readme SOS.txt" />
+     <None Include="Assets\Graphics\VFX\TSF\Shaders\TSFOutline.shader" />
      <None Include="Assets\Graphics\Environment\Real Stars Skybox\Demo Scene\Documentation.txt" />
      <None Include="Assets\Graphics\VFX\_Creepy_Cat\3D Games Effects Pack Free\_FAQ - Informations\Help Readme SOS.txt" />
      <None Include="Assets\Graphics\Environment\HQ Old Books\readme.txt" />
@@ -831,6 +835,10 @@
     <ProjectReference Include="Zenject.csproj">
       <Project>{3203dcee-63ea-516e-4b00-b5f186ee2d27}</Project>
       <Name>Zenject</Name>
+    </ProjectReference>
+    <ProjectReference Include="DELTation.ToonShader.Editor.csproj">
+      <Project>{84b37ef1-b61e-2137-c49e-6ab6a779c117}</Project>
+      <Name>DELTation.ToonShader.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

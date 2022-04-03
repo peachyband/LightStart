@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject-ReflectionBaking-Ed
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject-TestFramework", "Zenject-TestFramework.csproj", "{192f2a56-57e2-d3e3-11ec-53465d44847f}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DELTation.ToonShader.Editor", "DELTation.ToonShader.Editor.csproj", "{84b37ef1-b61e-2137-c49e-6ab6a779c117}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,8 @@ Global
 		{10c44769-fc17-aadf-9aaa-cfab55ee723d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{192f2a56-57e2-d3e3-11ec-53465d44847f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{192f2a56-57e2-d3e3-11ec-53465d44847f}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84b37ef1-b61e-2137-c49e-6ab6a779c117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84b37ef1-b61e-2137-c49e-6ab6a779c117}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

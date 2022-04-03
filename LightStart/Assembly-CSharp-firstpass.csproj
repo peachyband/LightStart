@@ -836,6 +836,10 @@
       <Project>{3203dcee-63ea-516e-4b00-b5f186ee2d27}</Project>
       <Name>Zenject</Name>
     </ProjectReference>
+    <ProjectReference Include="DELTation.ToonShader.Editor.csproj">
+      <Project>{84b37ef1-b61e-2137-c49e-6ab6a779c117}</Project>
+      <Name>DELTation.ToonShader.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

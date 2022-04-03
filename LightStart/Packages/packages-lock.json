@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "com.deltation.toon-shader": {
+      "version": "file:com.deltation.toon-shader",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.render-pipelines.universal": "10.3.2"
+      }
+    },
     "com.unity.burst": {
       "version": "1.6.3",
       "depth": 1,
