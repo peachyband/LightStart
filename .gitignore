@@ -3,7 +3,7 @@
 # =============== #
 Temp/
 Library/
-Logs/*.log
+Logs/
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
