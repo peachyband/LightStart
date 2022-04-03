@@ -3,6 +3,7 @@
 # =============== #
 Temp/
 Library/
+Logs/*.log
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
@@ -29,3 +30,4 @@ obj/
 .Trashes
 ehthumbs.db
 Thumbs.db
+Logs/
