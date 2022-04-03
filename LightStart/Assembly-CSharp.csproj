@@ -45,27 +45,10 @@
      <Compile Include="Assets\Graphics\VFX\OccaSoftware\Enflame\Scripts\VolumetricFire.cs" />
      <Compile Include="Assets\Graphics\VFX\OccaSoftware\Enflame\Scripts\OscillateLightBrightness.cs" />
      <Compile Include="Assets\Graphics\Environment\LowPolyEarth\EarthSpinScript.cs" />
-     <None Include="Assets\Graphics\VFX\FlexibleCelShader\Presets\!Default.json" />
-     <None Include="Assets\Graphics\VFX\Simple Toon\Shaders\STOutline.shader" />
-     <None Include="Assets\Graphics\VFX\FlexibleCelShader\Presets\Electric Blue.json" />
-     <None Include="Assets\Graphics\VFX\FlexibleCelShader\Presets\Subtle Breeze.json" />
-     <None Include="Assets\Graphics\VFX\FlexibleCelShader\Presets\Inverted.json" />
-     <None Include="Assets\Graphics\VFX\FlexibleCelShader\Presets\Noir Purple.json" />
      <None Include="Assets\Graphics\VFX\_Creepy_Cat\3D Games Effects Pack Free\Example_02\Help Readme SOS.txt" />
      <None Include="Assets\Graphics\Environment\Real Stars Skybox\Demo Scene\Documentation.txt" />
-     <None Include="Assets\Graphics\VFX\Simple Toon\Shaders\STTransparent.shader" />
-     <None Include="Assets\Graphics\VFX\Simple Toon\Shaders\STCore.cginc" />
-     <None Include="Assets\Graphics\VFX\FlexibleCelShader\Presets\Glacier.json" />
-     <None Include="Assets\Graphics\VFX\FlexibleCelShader\Presets\Solid Gold.json" />
      <None Include="Assets\Graphics\VFX\_Creepy_Cat\3D Games Effects Pack Free\_FAQ - Informations\Help Readme SOS.txt" />
-     <None Include="Assets\Graphics\VFX\Simple Toon\Shaders\STDefault.shader" />
-     <None Include="Assets\Graphics\VFX\Simple Toon\Shaders\STFunctions.cginc" />
-     <None Include="Assets\Graphics\VFX\FlexibleCelShader\Presets\Earthy Light.json" />
-     <None Include="Assets\Graphics\VFX\FlexibleCelShader\Shaders\CelNoOutline.shader" />
-     <None Include="Assets\Graphics\VFX\FlexibleCelShader\Shaders\CelSilhouette.shader" />
      <None Include="Assets\Graphics\Environment\HQ Old Books\readme.txt" />
-     <None Include="Assets\Graphics\VFX\FlexibleCelShader\Shaders\CelOutline.shader" />
-     <None Include="Assets\Graphics\VFX\FlexibleCelShader\Presets\Summer Evening.json" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.9f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
