@@ -38,7 +38,6 @@ public class Hero : MonoBehaviour
     /* Some classes need to initizlize */
     private void Start()
     {
-        InitializeInput();
         /* a few apllication settings for more smooth. This is Optional. */
         QualitySettings.vSyncCount = 0;
         Cursor.lockState = CursorLockMode.Locked;
@@ -102,24 +101,17 @@ public class Hero : MonoBehaviour
         /* Camera following */
         overview.Follow(transform.position);
     }
-
-    private void InitializeInput()
-    {
-        movement.moveAction = 
-        movement.lookAction = movement.PlayerInput.actions["Look"];
-    }
+    
 
     private void ReadInput () {
-        //if (Input.GetKeyDown (KeyCode.R)) lifecycle.Damage(50);
-        if (Keyboard.current.hKey.isPressed) lifecycle.Heal(50);
-        if (Keyboard.current.tKey.isPressed) lifecycle.Respawn();
-        overview.lookingInputValues.x = Input.GetAxis("Mouse X");
-        overview.lookingInputValues.y = Input.GetAxis("Mouse Y");
-        overview.aimingInputValue = Mouse.current.rightButton.isPressed;
+        if (Input.GetKeyDown (KeyCode.R)) lifecycle.Damage(50);
+        if (Input.GetKeyDown (KeyCode.H)) lifecycle.Heal(50);
+        if (Input.GetKeyDown (KeyCode.T)) lifecycle.Respawn();
+        overview.aimingInputValue = Input.GetMouseButton(1);
         movement.movementInputValues.x = Input.GetAxis("Horizontal");
         movement.movementInputValues.y = Input.GetAxis("Vertical");
-        movement.jumpingInputValue = Keyboard.current.spaceKey.isPressed;
-        movement.runningInputValue = Keyboard.current.leftShiftKey.isPressed;
+        movement.jumpingInputValue = Input.GetButtonDown("Jump");
+        movement.runningInputValue = Input.GetKey(KeyCode.LeftShift);
     }
 
     private void DamageFX () {

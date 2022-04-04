@@ -16,8 +16,6 @@ namespace AFPC {
 
         [Header("Inputs")]
         public Vector3 movementInputValues;
-        public InputAction moveAction;
-        public InputAction lookAction;
         public bool runningInputValue;
         public bool jumpingInputValue;
 
