@@ -110,7 +110,7 @@ public class Hero : MonoBehaviour
         if (Input.GetKeyDown (KeyCode.R)) lifecycle.Damage(50);
         if (Input.GetKeyDown (KeyCode.H)) lifecycle.Heal(50);
         if (Input.GetKeyDown (KeyCode.T)) lifecycle.Respawn();
-        if (Input.GetMouseButton(0)) gunfireController.weaponShouldFire = true;
+        //if (Input.GetMouseButton(0)) gunfireController.weaponShouldFire = true;
         overview.aimingInputValue = Input.GetMouseButton(1);
         movement.movementInputValues.x = Input.GetAxis("Horizontal");
         movement.movementInputValues.y = Input.GetAxis("Vertical");
