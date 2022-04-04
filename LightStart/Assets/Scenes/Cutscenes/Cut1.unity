@@ -598,6 +598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actors:
   - node:
+<<<<<<< Updated upstream
     - audioClip: {fileID: 8300000, guid: 4703b10845aedd64ca5bc0fe68c9120d, type: 3}
       nextGroup: 1
       camera: {fileID: 961739752}
@@ -642,6 +643,30 @@ MonoBehaviour:
       camera: {fileID: 1017566225}
     iterator: 0
   nextGroup: 0
+=======
+    - {audioClip: {fileID: 8300000, guid: 4703b10845aedd64ca5bc0fe68c9120d, type: 3}, nextGroup: 1, camera: {fileID: 961739752}}
+    - {audioClip: {fileID: 8300000, guid: af6e8afd39bc993438ec1b4fb1ee50f2, type: 3}, nextGroup: 3, camera: {fileID: 961739752}}
+    - {audioClip: {fileID: 8300000, guid: 43d926c82f120c2428afe2ebc5ad4455, type: 3}, nextGroup: 3, camera: {fileID: 961739752}}
+    - {audioClip: {fileID: 8300000, guid: 049aed4eec3b865459606358a549b606, type: 3}, nextGroup: 1, camera: {fileID: 961739752}}
+    - {audioClip: {fileID: 8300000, guid: 3926e4bd86a537f4a92f0584d7144122, type: 3}, nextGroup: 3, camera: {fileID: 961739752}}
+    - {audioClip: {fileID: 8300000, guid: 5310a6e1c68ad8f41b7b0173b9b89529, type: 3}, nextGroup: -1, camera: {fileID: 961739752}}
+    iterator: 0
+  - node:
+    - {audioClip: {fileID: 8300000, guid: a57bee54c5653af4bbe7ff47e372456a, type: 3}, nextGroup: 2, camera: {fileID: 947210940}}
+    - {audioClip: {fileID: 8300000, guid: 7717b10fa1617ce478431992ff3a23ac, type: 3}, nextGroup: 0, camera: {fileID: 947210940}}
+    iterator: 0
+  - node:
+    - {audioClip: {fileID: 8300000, guid: 5b89e9f01bbb0c64485f220cd49624dc, type: 3}, nextGroup: 0, camera: {fileID: 75257939}}
+    iterator: 0
+  - node:
+    - {audioClip: {fileID: 8300000, guid: ba403eab1eeb0034ab205dfe404dc2f5, type: 3}, nextGroup: 0, camera: {fileID: 1017566225}}
+    - {audioClip: {fileID: 8300000, guid: b4bc1da5645a5f84f960bdb784f97c1a, type: 3}, nextGroup: 0, camera: {fileID: 1017566225}}
+    - {audioClip: {fileID: 8300000, guid: cc68469666ace4a45ba7c9ea786e6597, type: 3}, nextGroup: 0, camera: {fileID: 1017566225}}
+    iterator: 0
+  asource: {fileID: 0}
+  nextGroup: 0
+  curCamera: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!82 &296460165
 AudioSource:
   m_ObjectHideFlags: 0
