@@ -71,6 +71,7 @@
     <Compile Include="Assets\Graphics\VFX\OccaSoftware\Enflame\Scripts\VolumetricFire.cs" />
     <Compile Include="Assets\Graphics\Environment\LowPolyEarth\EarthSpinScript.cs" />
     <Compile Include="Assets\Scripts\Features\Player\Factories\PlayerFactory.cs" />
+    <Compile Include="Assets\Scripts\ICutsceneEvent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

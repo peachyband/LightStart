@@ -14,9 +14,10 @@ public class CutsceneManager : MonoBehaviour
     public int nextGroup = 0;
     private Camera curCamera;
 
-    // Start is called before the first frame update
+ 
     void Start()
     {
+        Debug.Log("SEX");
         asource = this.GetComponent<AudioSource>();
         if (actors.Length > 0)
             playClip(nextGroup);

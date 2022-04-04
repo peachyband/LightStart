@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Shaking : MonoBehaviour
 {
-    public float freq;
-    public float phase;
-    public float amplitude;
+    public float freq = 3.0f;
+    public float phase = 0.0f;
+    public float amplitude = 0.05f;
     private float elapsedTime = 0.0f;
     private Vector3 startPos;
     // Start is called before the first frame update
