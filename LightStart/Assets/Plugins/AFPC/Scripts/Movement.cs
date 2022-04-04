@@ -19,8 +19,8 @@ namespace AFPC {
         public bool runningInputValue;
         public bool jumpingInputValue;
 
-
         [Header("Acceleration")] 
+        public float gravityScale = 1;
         public float referenceAcceleration = 2.66f;
         private float currentAcceleration = 2.5f;
         private float movementSmoothing = 0.3f;
@@ -40,6 +40,8 @@ namespace AFPC {
 
         [Header("Jumping")]
         public float jumpForce = 7.5f;
+        public int jumpsCount = 2;
+        public int jumpsLeft;
         private bool isJumpingAvailable = true;
         private bool isAirControl = true;
         private Vector3 groungCheckPosition;
@@ -212,12 +214,21 @@ namespace AFPC {
         /// </summary>
 	    public virtual void Jumping () {
 		    if (!isJumpingAvailable) return;
-		    if (isGrounded) {
+		    if (isGrounded || jumpsLeft > 0) {
 			    if (jumpingInputValue) {
                     rb.velocity = new Vector3 (rb.velocity.x, jumpForce, rb.velocity.z);
+                    jumpsLeft -= 1;
                 }
 		    }
 	    }
+
+        public virtual void Impact(Vector3 impactVector)
+        {
+            if (IsGrounded())
+            {
+                rb.velocity = new Vector3(impactVector.x, impactVector.y, impactVector.z);
+            }
+        }
         
         /// <summary>
         /// Running state. Better use it in Update.
@@ -242,6 +253,7 @@ namespace AFPC {
             groungCheckPosition = new Vector3 (cc.transform.position.x, cc.transform.position.y - height / 2, cc.transform.position.z);
             if (Physics.CheckSphere (groungCheckPosition, 0.1f, groundMask, QueryTriggerInteraction.Ignore)) {
                 isGrounded = true;
+                jumpsLeft = jumpsCount;
                 if (!isLandingActionPerformed) {
                     isLandingActionPerformed = true;
                     landingAction?.Invoke ();

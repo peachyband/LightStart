@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace BigRookGames.Weapons
 {
@@ -8,6 +6,7 @@ namespace BigRookGames.Weapons
     {
         // --- Config ---
         public float speed = 100;
+        public float explosionForce = 10;
         public LayerMask collisionLayerMask;
 
         // --- Explosion VFX ---
@@ -50,9 +49,13 @@ namespace BigRookGames.Weapons
             projectileMesh.enabled = false;
             targetHit = true;
             inFlightAudioSource.Stop();
-            foreach(Collider col in GetComponents<Collider>())
-            {
-                col.enabled = false;
+            Collider[] entities = Physics.OverlapSphere(transform.position, 3);
+            foreach(var entity in entities){
+                if(entity.tag == "Entity")
+                {
+                    Hero entityManager = entity.gameObject.GetComponent<Hero>();
+                    entityManager.ReactOnImpact(explosionForce, transform.position - entity.transform.position);
+                }
             }
             disableOnHit.Stop();
 

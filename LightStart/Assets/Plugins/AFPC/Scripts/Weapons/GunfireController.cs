@@ -17,8 +17,8 @@ namespace BigRookGames.Weapons
 
         // --- Config ---
         public Transform AimPoint;
-        public bool autoFire;
-        public float shotDelay = .5f;
+        public bool weaponShouldFire;
+        public float shotDelay = 5f;
         public bool rotate = true;
         public float rotationSpeed = .25f;
 
@@ -47,11 +47,11 @@ namespace BigRookGames.Weapons
 
         private void Update()
         {
-            transform.LookAt(AimPoint);
-            
-            if (autoFire && ((timeLastFired + shotDelay) <= Time.time))
+            RotateWeapon();
+            if (weaponShouldFire && timeLastFired + shotDelay <= Time.time)
             {
                 FireWeapon();
+                weaponShouldFire = false;
             }
         }
 
@@ -114,6 +114,14 @@ namespace BigRookGames.Weapons
 
         }
 
+        private void RotateWeapon()
+        {
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 direction = mousePos - transform.position;
+            float angle = Mathf. Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion. AngleAxis(-angle, Vector3. up);
+        }
+        
         private void ReEnableDisabledProjectile()
         {
             reloadSource.Play();

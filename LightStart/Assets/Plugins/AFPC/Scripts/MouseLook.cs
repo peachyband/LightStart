@@ -94,7 +94,7 @@ public class MouseLook : MonoBehaviour {
         transform.localEulerAngles = new Vector3(rotation.y, rotation.x, 0);
         foreach (var rotateable in objectsToRotate)
         {
-            rotateable.localEulerAngles = transform.localEulerAngles;
+            rotateable.localEulerAngles = new Vector3(0, rotation.x, 0);
         }
     }
 }

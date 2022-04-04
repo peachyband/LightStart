@@ -10,7 +10,7 @@ namespace AFPC {
     public class Lifecycle {
 
         public bool isDebugLog;
-
+        public RectTransform DeathScreen;
         public string ID = "AFPC";
         private bool isAvailable = true;
 
@@ -273,6 +273,8 @@ namespace AFPC {
         /// </summary>
         public virtual void Death () {
             if (!isAvailable) return;
+            DeathScreen.transform.gameObject.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
             Deactivate();
 		    isFrenzy = false;
 		    BanHealthRecovery();

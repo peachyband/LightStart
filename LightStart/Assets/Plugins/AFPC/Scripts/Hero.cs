@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using AFPC;
 using BigRookGames.Weapons;
-using UnityEngine.InputSystem;
-using Zenject;
 
 /// <summary>
 /// Example of setup AFPC with Lifecycle, Movement and Overview classes.
@@ -112,7 +110,7 @@ public class Hero : MonoBehaviour
         if (Input.GetKeyDown (KeyCode.R)) lifecycle.Damage(50);
         if (Input.GetKeyDown (KeyCode.H)) lifecycle.Heal(50);
         if (Input.GetKeyDown (KeyCode.T)) lifecycle.Respawn();
-        if (Input.GetMouseButton(0)) gunfireController.FireWeapon();
+        if (Input.GetMouseButton(0)) gunfireController.weaponShouldFire = true;
         overview.aimingInputValue = Input.GetMouseButton(1);
         movement.movementInputValues.x = Input.GetAxis("Horizontal");
         movement.movementInputValues.y = Input.GetAxis("Vertical");
@@ -120,12 +118,17 @@ public class Hero : MonoBehaviour
         movement.runningInputValue = Input.GetKeyDown(KeyCode.LeftShift);
     }
     
-    
-    private void HoldWeapon()
-    {
-        gunfireController.transform.localRotation = transform.localRotation;
+    public void ReactOnImpact(float impactForce, Vector3 direction){
+        var impactVector = direction;
+        impactVector *= impactForce * Mathf.Sin(Vector3.Angle(transform.up, direction)) / (0.5f * 70); 
+        impactVector.Normalize();
+        movement.Impact(impactVector);
     }
 
+    public void GetDamage(float damage)
+    {
+        lifecycle.Damage(damage);
+    }
 
     private void DamageFX () {
         if (HUD) HUD.DamageFX();
