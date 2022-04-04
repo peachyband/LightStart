@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 75257935}
   - component: {fileID: 75257939}
-  - component: {fileID: 75257938}
   - component: {fileID: 75257937}
   - component: {fileID: 75257936}
   m_Layer: 0
@@ -287,14 +286,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &75257938
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75257934}
-  m_Enabled: 1
 --- !u!20 &75257939
 Camera:
   m_ObjectHideFlags: 0
@@ -1244,7 +1235,6 @@ GameObject:
   m_Component:
   - component: {fileID: 856938838}
   - component: {fileID: 856938837}
-  - component: {fileID: 856938836}
   - component: {fileID: 856938835}
   m_Layer: 0
   m_Name: Crowd
@@ -1286,14 +1276,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &856938836
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856938834}
-  m_Enabled: 1
 --- !u!20 &856938837
 Camera:
   m_ObjectHideFlags: 0
@@ -1362,7 +1344,6 @@ GameObject:
   m_Component:
   - component: {fileID: 947210936}
   - component: {fileID: 947210940}
-  - component: {fileID: 947210939}
   - component: {fileID: 947210938}
   - component: {fileID: 947210937}
   m_Layer: 0
@@ -1516,14 +1497,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &947210939
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947210935}
-  m_Enabled: 1
 --- !u!20 &947210940
 Camera:
   m_ObjectHideFlags: 0
@@ -1577,7 +1550,6 @@ GameObject:
   m_Component:
   - component: {fileID: 961739753}
   - component: {fileID: 961739752}
-  - component: {fileID: 961739751}
   - component: {fileID: 961739750}
   - component: {fileID: 961739754}
   m_Layer: 0
@@ -1620,14 +1592,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &961739751
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961739749}
-  m_Enabled: 1
 --- !u!20 &961739752
 Camera:
   m_ObjectHideFlags: 0
@@ -1792,7 +1756,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1017566221}
   - component: {fileID: 1017566225}
-  - component: {fileID: 1017566224}
   - component: {fileID: 1017566223}
   - component: {fileID: 1017566222}
   m_Layer: 0
@@ -1946,14 +1909,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &1017566224
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1017566220}
-  m_Enabled: 1
 --- !u!20 &1017566225
 Camera:
   m_ObjectHideFlags: 0
