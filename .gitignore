@@ -31,3 +31,5 @@ obj/
 ehthumbs.db
 Thumbs.db
 Logs/
+*.log
+LightStart/Logs/AssetImportWorker0.log
