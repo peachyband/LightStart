@@ -87,7 +87,7 @@
     <Compile Include="Assets\Graphics\VFX\OccaSoftware\Enflame\Scripts\OscillateLightBrightness.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-    <Compile Include="Assets\Scripts\ICutsceneEvent.cs" />
+    <Compile Include="Assets\Scripts\CutsceneEvent.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Scripts\Features\Player\Bootstrap\PlayerInstaller.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
@@ -104,10 +104,11 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Graphics\VFX\OccaSoftware\Enflame\Scripts\VolumetricFire.cs" />
     <Compile Include="Assets\Graphics\Environment\LowPolyEarth\EarthSpinScript.cs" />
+    <Compile Include="Assets\Scripts\EarthEvent.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\Features\Player\Factories\PlayerFactory.cs" />
-    <Compile Include="Assets\Scripts\EarthEvent.cs" />
+    <Compile Include="Assets\Scripts\LevelManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CutsceneManager : MonoBehaviour
 {
@@ -17,7 +18,6 @@ public class CutsceneManager : MonoBehaviour
  
     void Start()
     {
-        Debug.Log("SEX");
         asource = this.GetComponent<AudioSource>();
         if (actors.Length > 0)
             playClip(nextGroup);
@@ -26,14 +26,23 @@ public class CutsceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!asource.isPlaying && nextGroup != -1)
+        if (!asource.isPlaying && nextGroup != -2)
             playClip(nextGroup);
     }
 
     void playClip(int groupIndex) 
     {
+        if (groupIndex == -1)
+        {
+            LevelManager.NextLevel();
+            return;
+        }
+
         ActorGroup curGroup = actors[groupIndex];
         ActorNode curNode = curGroup.node[curGroup.iterator];
+
+        if (curNode.cutsceneEvent != null)
+            curNode.cutsceneEvent.startEvent();
 
         if (curCamera != null)
             curCamera.enabled = false;
@@ -45,6 +54,8 @@ public class CutsceneManager : MonoBehaviour
         asource.PlayOneShot(curNode.audioClip);
         ++curGroup.iterator;
         nextGroup = curNode.nextGroup;
+
+        
     }
 }
 
@@ -63,4 +74,5 @@ class ActorNode
     public int nextGroup;
     public Camera camera;
     public string subtext;
+    public CutsceneEvent cutsceneEvent;
 }
