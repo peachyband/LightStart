@@ -13,13 +13,13 @@ public class EnemyBehaviour : MonoBehaviour
     private NavMeshAgent _agent => GetComponent<NavMeshAgent>();
     private void Start()
     {
-        _agent.SetDestination(Target.position);
         _agent.speed = speed;
+        _agent.destination = Target.position;
     }
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, Target.position) < 0.5f) 
+        if (Vector3.Distance(transform.position, Target.position) < 1f) 
             hero.GetDamage(damage);
     }
 }
