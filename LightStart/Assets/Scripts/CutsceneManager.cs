@@ -2,9 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CutsceneManager : MonoBehaviour
 {
+    [SerializeField]
+    private TextMeshProUGUI subtitles;
     [SerializeField]
     private ActorGroup[] actors;
     private AudioSource asource;
@@ -36,6 +39,8 @@ public class CutsceneManager : MonoBehaviour
         curNode.camera.enabled = true;
         curCamera = curNode.camera;
 
+        subtitles.SetText(curNode.subtext);
+
         asource.PlayOneShot(curNode.audioClip);
         ++curGroup.iterator;
         nextGroup = curNode.nextGroup;
@@ -56,4 +61,5 @@ class ActorNode
     public AudioClip audioClip;
     public int nextGroup;
     public Camera camera;
+    public string subtext;
 }
