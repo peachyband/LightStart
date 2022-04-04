@@ -8,14 +8,14 @@ public class HUD : MonoBehaviour {
 
     [Header("References")]
     public Hero hero;
-    public Slider slider_Shield;
+    //public Slider slider_Shield;
     public Slider slider_Health;
     public Slider slider_Endurance;
     public CanvasGroup canvasGroup_DamageFX;
 
     private void Awake () {
         if (hero) {
-            slider_Shield.maxValue = hero.lifecycle.referenceShield;
+            //slider_Shield.maxValue = hero.lifecycle.referenceShield;
             slider_Health.maxValue = hero.lifecycle.referenceHealth;
             slider_Endurance.maxValue = hero.movement.referenceEndurance;
         }
@@ -23,7 +23,7 @@ public class HUD : MonoBehaviour {
 
     private void Update () {
         if (hero) {
-            slider_Shield.value = hero.lifecycle.GetShieldValue();
+            //slider_Shield.value = hero.lifecycle.GetShieldValue();
             slider_Health.value = hero.lifecycle.GetHealthValue();
             slider_Endurance.value = hero.movement.GetEnduranceValue();
         }

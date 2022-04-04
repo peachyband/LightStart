@@ -108,6 +108,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\Graphics\Rocks\VFX\RenderOnTheTop.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
@@ -911,6 +912,10 @@
     <ProjectReference Include="Zenject.csproj">
       <Project>{3203dcee-63ea-516e-4b00-b5f186ee2d27}</Project>
       <Name>Zenject</Name>
+    </ProjectReference>
+    <ProjectReference Include="BigRookGames.csproj">
+      <Project>{755b0fa1-9808-d942-3082-b93dbd6a2a14}</Project>
+      <Name>BigRookGames</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

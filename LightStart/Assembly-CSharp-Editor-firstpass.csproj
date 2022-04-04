@@ -871,6 +871,10 @@
       <Project>{3203dcee-63ea-516e-4b00-b5f186ee2d27}</Project>
       <Name>Zenject</Name>
     </ProjectReference>
+    <ProjectReference Include="BigRookGames.csproj">
+      <Project>{755b0fa1-9808-d942-3082-b93dbd6a2a14}</Project>
+      <Name>BigRookGames</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

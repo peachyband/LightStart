@@ -104,7 +104,7 @@ Material:
     - Boolean_E53E5D96: 0
     - Vector1_2520DE87: 0.1
     - Vector1_48C004F6: 3
-    - Vector1_575FDCB0: 0.73
+    - Vector1_575FDCB0: 1
     - Vector1_5B35BF2: 2.96
     - Vector1_5F10D5CF: 0.41
     - Vector1_79CD236A: 3
@@ -112,7 +112,7 @@ Material:
     - Vector1_AD7F7343: 0
     - Vector1_BA283AB7: 1.2
     - Vector1_BC31787F: 2.12
-    - Vector1_D8127884: 0.55
+    - Vector1_D8127884: 0.28
     - Vector1_DD6C0587: 0.92
     - _AlphaClip: 0
     - _Blend: 0

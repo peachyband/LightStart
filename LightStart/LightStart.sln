@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOTween.Modules", "DOTween.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniRx.Examples", "UniRx.Examples.csproj", "{a2857589-bcd8-2b19-b153-7f9f646dc9ac}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigRookGames", "BigRookGames.csproj", "{755b0fa1-9808-d942-3082-b93dbd6a2a14}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject-PoolMonitor-Editor", "Zenject-PoolMonitor-Editor.csproj", "{54851c46-70d6-106f-da1b-ad174557b9dc}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject-UnitTests-Editor", "Zenject-UnitTests-Editor.csproj", "{a3a44239-0500-7c4c-c6bd-ea05bf7935c4}"
@@ -52,6 +54,8 @@ Global
 		{c19d87c0-990a-2ad8-ee23-888d3097b826}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{a2857589-bcd8-2b19-b153-7f9f646dc9ac}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{a2857589-bcd8-2b19-b153-7f9f646dc9ac}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{755b0fa1-9808-d942-3082-b93dbd6a2a14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{755b0fa1-9808-d942-3082-b93dbd6a2a14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54851c46-70d6-106f-da1b-ad174557b9dc}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{54851c46-70d6-106f-da1b-ad174557b9dc}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{a3a44239-0500-7c4c-c6bd-ea05bf7935c4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

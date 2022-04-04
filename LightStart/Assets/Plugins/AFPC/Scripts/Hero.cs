@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using AFPC;
+using BigRookGames.Weapons;
 using UnityEngine.InputSystem;
 using Zenject;
 
@@ -11,6 +12,8 @@ public class Hero : MonoBehaviour
     /* UI Reference */
     public HUD HUD;
 
+    public GunfireController gunfireController;
+    
     /* Lifecycle class. Damage, Heal, Death, Respawn... */
     public Lifecycle lifecycle;
 
@@ -60,6 +63,8 @@ public class Hero : MonoBehaviour
         /* Block controller when unavailable */
         if (!lifecycle.Availability()) return;
 
+        //HoldWeapon();
+        
         /* Mouse look state */
         overview.Looking();
 
@@ -107,12 +112,20 @@ public class Hero : MonoBehaviour
         if (Input.GetKeyDown (KeyCode.R)) lifecycle.Damage(50);
         if (Input.GetKeyDown (KeyCode.H)) lifecycle.Heal(50);
         if (Input.GetKeyDown (KeyCode.T)) lifecycle.Respawn();
+        if (Input.GetMouseButton(0)) gunfireController.FireWeapon();
         overview.aimingInputValue = Input.GetMouseButton(1);
         movement.movementInputValues.x = Input.GetAxis("Horizontal");
         movement.movementInputValues.y = Input.GetAxis("Vertical");
-        movement.jumpingInputValue = Input.GetButtonDown("Jump");
-        movement.runningInputValue = Input.GetKey(KeyCode.LeftShift);
+        movement.jumpingInputValue = Input.GetKeyDown(KeyCode.Space);
+        movement.runningInputValue = Input.GetKeyDown(KeyCode.LeftShift);
     }
+    
+    
+    private void HoldWeapon()
+    {
+        gunfireController.transform.localRotation = transform.localRotation;
+    }
+
 
     private void DamageFX () {
         if (HUD) HUD.DamageFX();

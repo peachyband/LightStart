@@ -22,7 +22,8 @@ public class MouseLook : MonoBehaviour {
     [SerializeField] private float maxVerticalAngleFromHorizon;
     [Tooltip("The period to wait until resetting the input value. Set this as low as possible, without encountering stuttering")]
     [SerializeField] private float inputLagPeriod;
-
+    [SerializeField] private List<Transform> objectsToRotate;
+    
     private Vector2 velocity; // The current rotation velocity, in degrees
     private Vector2 rotation; // The current rotation, in degrees
     private Vector2 lastInputEvent; // The last received non-zero input value
@@ -91,5 +92,9 @@ public class MouseLook : MonoBehaviour {
 
         // Convert the rotation to euler angles
         transform.localEulerAngles = new Vector3(rotation.y, rotation.x, 0);
+        foreach (var rotateable in objectsToRotate)
+        {
+            rotateable.localEulerAngles = transform.localEulerAngles;
+        }
     }
 }
