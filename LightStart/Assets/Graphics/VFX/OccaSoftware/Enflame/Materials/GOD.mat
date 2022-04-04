@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Fire Material
+  m_Name: GOD
   m_Shader: {fileID: -6465566751694194690, guid: b340d47e712234a44b861b091d938516,
     type: 3}
   m_ShaderKeywords: 
@@ -104,16 +104,16 @@ Material:
     - Boolean_E53E5D96: 0
     - Vector1_2520DE87: 0.1
     - Vector1_48C004F6: 3
-    - Vector1_575FDCB0: 0.73
+    - Vector1_575FDCB0: 0.702
     - Vector1_5B35BF2: 2.96
-    - Vector1_5F10D5CF: 0.41
+    - Vector1_5F10D5CF: 0.196
     - Vector1_79CD236A: 3
     - Vector1_8D7584D8: 0.57
     - Vector1_AD7F7343: 0
-    - Vector1_BA283AB7: 1.2
+    - Vector1_BA283AB7: 0.48
     - Vector1_BC31787F: 2.12
-    - Vector1_D8127884: 0.55
-    - Vector1_DD6C0587: 0.92
+    - Vector1_D8127884: 0.876
+    - Vector1_DD6C0587: 0.24
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -138,7 +138,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_89D2C634: {r: 2.4314253, g: 2.3671932, b: 2.6552644, a: 0}
+    - Color_89D2C634: {r: 0, g: 4.732835, b: 0, a: 0}
     - Color_E29E6C60: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_4373CA46: {r: 0, g: 1, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}

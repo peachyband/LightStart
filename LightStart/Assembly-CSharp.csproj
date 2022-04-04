@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Features\Config\LevelConfig.cs" />
     <Compile Include="Assets\Scripts\Features\Player\Data\PlayerResources.cs" />
+    <Compile Include="Assets\Scripts\Shaking.cs" />
     <Compile Include="Assets\Scripts\Features\Player\Configs\PlayerConfig.cs" />
     <Compile Include="Assets\Graphics\VFX\_Creepy_Cat\3D Games Effects Pack Free\Example_02\InstanceExample.cs" />
     <Compile Include="Assets\Scripts\Features\Player\Bootstrap\ConfigsInstaller.cs" />
