@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EarthEvent : MonoBehaviour, ICutsceneEvent
+public class EarthEvent : CutsceneEvent
 {
-    public AnimationClip anim;
+    [SerializeField]
+    private GameObject objectToActivate;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,13 +18,8 @@ public class EarthEvent : MonoBehaviour, ICutsceneEvent
         
     }
 
-    public void startEvent() 
+    public override void startEvent() 
     {
-        
-    }
-
-    public void startEventWithInteruption() 
-    {
-        
+        objectToActivate.SetActive(true);
     }
 }
