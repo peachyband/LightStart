@@ -14,11 +14,14 @@ public class EnemyBehaviour : MonoBehaviour
     private void Start()
     {
         _agent.speed = speed;
-        _agent.destination = Target.position;
+        //_agent.destination = Target.position;
+        _agent.SetDestination(Target.position);
     }
 
     void Update()
     {
+        Debug.Log(Target.hasChanged);
+            _agent.SetDestination(Target.position);
         if (Vector3.Distance(transform.position, Target.position) < 1f) 
             hero.GetDamage(damage);
     }
