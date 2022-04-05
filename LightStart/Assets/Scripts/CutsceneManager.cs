@@ -26,17 +26,24 @@ public class CutsceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!asource.isPlaying && nextGroup != -2)
+        if (!asource.isPlaying )
             playClip(nextGroup);
     }
 
     void playClip(int groupIndex) 
     {
+        if (groupIndex == -2)
+        {
+            LevelManager.ExitGame();
+            return;
+        }
         if (groupIndex == -1)
         {
             LevelManager.NextLevel();
             return;
         }
+
+        
 
         ActorGroup curGroup = actors[groupIndex];
         ActorNode curNode = curGroup.node[curGroup.iterator];

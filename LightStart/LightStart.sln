@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject", "Zenject.csproj", "{EEDC0332-EA63-6E51-4B00-B5F186EE2D27}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniRx", "UniRx.csproj", "{7800BEC6-90B9-703E-B4CF-E2EB221081BC}"
@@ -11,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject-IntegrationTests-Ed
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{B4DB6DC4-B1B8-DC24-FEA6-3128325FAD09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{B550A602-964D-A66D-7AEE-B6BC1AFF76F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{02A650B5-4D96-6DA6-7AEE-B6BC1AFF76F8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOTween.Modules", "DOTween.Modules.csproj", "{C0879DC1-0A99-D82A-EE23-888D3097B826}"
 EndProject
@@ -57,10 +59,10 @@ Global
 		{B4DB6DC4-B1B8-DC24-FEA6-3128325FAD09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4DB6DC4-B1B8-DC24-FEA6-3128325FAD09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4DB6DC4-B1B8-DC24-FEA6-3128325FAD09}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B550A602-964D-A66D-7AEE-B6BC1AFF76F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B550A602-964D-A66D-7AEE-B6BC1AFF76F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B550A602-964D-A66D-7AEE-B6BC1AFF76F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B550A602-964D-A66D-7AEE-B6BC1AFF76F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A650B5-4D96-6DA6-7AEE-B6BC1AFF76F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A650B5-4D96-6DA6-7AEE-B6BC1AFF76F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A650B5-4D96-6DA6-7AEE-B6BC1AFF76F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A650B5-4D96-6DA6-7AEE-B6BC1AFF76F8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C0879DC1-0A99-D82A-EE23-888D3097B826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C0879DC1-0A99-D82A-EE23-888D3097B826}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0879DC1-0A99-D82A-EE23-888D3097B826}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -100,5 +102,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C23BF25-BE8F-4DA5-BEDD-1C514E5D88FD}
 	EndGlobalSection
 EndGlobal

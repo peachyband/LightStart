@@ -18,7 +18,7 @@ public class KeyItemBehaviour : MonoBehaviour
 
     private void OnCollisionStay(Collision other)
     {
-        if (other.gameObject.layer == 7)
+        //if (other.gameObject.layer == 7)
             LevelManager.NextLevel();
     }
 }
