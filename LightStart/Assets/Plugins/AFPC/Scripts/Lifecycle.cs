@@ -208,9 +208,9 @@ namespace AFPC {
         /// <param name="value"></param>
         public virtual void Damage (float value) {
             if (!isAvailable) return;
-            float shieldDamage = Mathf.Min (shield, value);
-            float healthDamage = Mathf.Min (health, value - shieldDamage);
-            shield -= shieldDamage;
+            float healthDamage = Mathf.Min (health, value);
+            //float healthDamage = Mathf.Min (health, value - shieldDamage);
+            //shield -= shieldDamage;
             health -= healthDamage;
             if (Mathf.Abs(health) < epsilon) {
                 Death ();
@@ -223,10 +223,11 @@ namespace AFPC {
         /// Perform an action when the character was damaged.
         /// </summary>
         /// <param name="action"></param>
-        public void AssignDamageAction (UnityAction action) {
+        public void AssignDamageAction (UnityAction action) 
+        {
             damageAction = action;
         }
-
+        
         /// <summary>
         /// Heal the character.
         /// </summary>

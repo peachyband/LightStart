@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using AFPC;
 using BigRookGames.Weapons;
+using Features.Manager;
+using Features.UIBehaviour;
+using Plugins.AFPC.Scripts;
 
 /// <summary>
 /// Example of setup AFPC with Lifecycle, Movement and Overview classes.
@@ -9,7 +12,7 @@ public class Hero : MonoBehaviour
 {
     /* UI Reference */
     public HUD HUD;
-
+    public float TimerValue;
     public GunfireController gunfireController;
     
     /* Lifecycle class. Damage, Heal, Death, Respawn... */
@@ -20,13 +23,10 @@ public class Hero : MonoBehaviour
 
     /* Overview class. Look, Aim, Shake... */
     public Overview overview;
+    
+    public LevelManager LevelManager;
 
-    /*[Inject]
-    public void Construct(HUD hud)
-    {
-        HUD = hud;
-    }*/
-
+    public RecordKeeper RecordKeeper;
     /* Optional assign the HUD */
     private void Awake()
     {
@@ -46,7 +46,9 @@ public class Hero : MonoBehaviour
         /* Initialize lifecycle and add Damage FX */
         lifecycle.Initialize();
         lifecycle.AssignDamageAction(DamageFX);
-
+        lifecycle.AssignHealAction(HealFX);
+        lifecycle.BanHealthRecovery();
+        
         /* Initialize movement and add camera shake when landing */
         movement.Initialize();
         movement.AssignLandingAction(() => overview.Shake(0.5f));
@@ -54,7 +56,8 @@ public class Hero : MonoBehaviour
 
     private void Update()
     {
-
+        if (LevelManager.CaptureRecord) TimerValue += Time.deltaTime;
+        LevelManager.FinishResult = TimerValue;
         /* Read player input before check availability */
         ReadInput();
 
@@ -84,7 +87,7 @@ public class Hero : MonoBehaviour
 
     private void FixedUpdate()
     {
-
+        
         /* Block controller when unavailable */
         if (!lifecycle.Availability()) return;
 
@@ -107,11 +110,13 @@ public class Hero : MonoBehaviour
     
 
     private void ReadInput () {
-        if (Input.GetKeyDown (KeyCode.R)) lifecycle.Damage(50);
-        if (Input.GetKeyDown (KeyCode.H)) lifecycle.Heal(50);
-        if (Input.GetKeyDown (KeyCode.T)) lifecycle.Respawn();
+        //if (Input.GetKeyDown (KeyCode.R)) lifecycle.Damage(50);
+        //if (Input.GetKeyDown (KeyCode.H)) lifecycle.Heal(50);
+        //if (Input.GetKeyDown (KeyCode.T)) lifecycle.Respawn();
         //if (Input.GetMouseButton(0)) gunfireController.weaponShouldFire = true;
         overview.aimingInputValue = Input.GetMouseButton(1);
+        overview.lookingInputValues.x = Input.GetAxis("Mouse X");
+        overview.lookingInputValues.y = Input.GetAxis("Mouse Y");
         movement.movementInputValues.x = Input.GetAxis("Horizontal");
         movement.movementInputValues.y = Input.GetAxis("Vertical");
         movement.jumpingInputValue = Input.GetKeyDown(KeyCode.Space);
@@ -130,8 +135,18 @@ public class Hero : MonoBehaviour
         lifecycle.Damage(damage);
     }
 
+    public void GetHeal(float healPoints)
+    {
+        lifecycle.Heal(healPoints);
+    }
+    
     private void DamageFX () {
         if (HUD) HUD.DamageFX();
         overview.Shake(0.75f);
+    }
+
+    private void HealFX()
+    {
+        if (HUD) HUD.HealFX();
     }
 }

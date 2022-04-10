@@ -606,84 +606,100 @@ MonoBehaviour:
       nextGroup: 1
       camera: {fileID: 961739752}
       subtext: Dear citizens of our World of Concepts!
+      cutsceneEvent: {fileID: 0}
     - audioClip: {fileID: 8300000, guid: af6e8afd39bc993438ec1b4fb1ee50f2, type: 3}
       nextGroup: 3
       camera: {fileID: 961739752}
       subtext: "Dear citizens! Listen, it\u2019s very important! Is there a Concept
         named \u201CGod\u201D among you?"
+      cutsceneEvent: {fileID: 0}
     - audioClip: {fileID: 8300000, guid: b8cba9a47af66f845b532c5a9057bdfb, type: 3}
       nextGroup: 0
       camera: {fileID: 961739752}
       subtext: ' I just got a new theorem! Citizens, be quiet! Listen to my words!'
+      cutsceneEvent: {fileID: 0}
     - audioClip: {fileID: 8300000, guid: 6fc372ca0ca5dda4fbb5e60ce6f5913e, type: 3}
       nextGroup: 4
       camera: {fileID: 961739752}
       subtext: "Just some minutes ago I\u2019 ve calculated  that the Concept named
         \u201CGod\u201D would put an end to our World of Concepts by creating the
         \u201Creal\u201D \u201CWorld\u201D!"
+      cutsceneEvent: {fileID: 0}
     - audioClip: {fileID: 8300000, guid: 69510b4d9f8545a4cbee20e11af5c55c, type: 3}
       nextGroup: 0
       camera: {fileID: 961739752}
       subtext: "Let me explain.  A week ago I got a theorem that says the following:
         \xABIf the \u201Creal\u201D \u201CWorld\u201D is created created, then all
         the living Concepts of World of Concepts die\xBB."
+      cutsceneEvent: {fileID: 0}
     - audioClip: {fileID: 8300000, guid: 1263f9a3fd9be9544b841a9b614c2f25, type: 3}
       nextGroup: 4
       camera: {fileID: 961739752}
       subtext: "Dear citizens! Mr. \u201CGod\u201D could be responsible for the \u201CBeginning
         of the World\u201D!"
+      cutsceneEvent: {fileID: 0}
     - audioClip: {fileID: 8300000, guid: 3926e4bd86a537f4a92f0584d7144122, type: 3}
       nextGroup: 3
       camera: {fileID: 961739752}
       subtext: You are right, mister, however, technically speaking, we can bypass
         the theorem! If we change some conditions then the theorem becomes false.
+      cutsceneEvent: {fileID: 0}
     - audioClip: {fileID: 8300000, guid: 5310a6e1c68ad8f41b7b0173b9b89529, type: 3}
       nextGroup: -1
       camera: {fileID: 961739752}
       subtext: "Get him! No \u201CGod\u201D \u2014 No \u201Cbeginning\u201D of the
         \u201CWorld\u201D!"
+      cutsceneEvent: {fileID: 0}
     iterator: 0
   - node:
     - audioClip: {fileID: 8300000, guid: a57bee54c5653af4bbe7ff47e372456a, type: 3}
       nextGroup: 2
       camera: {fileID: 947210940}
       subtext: What our Theorist is yelling for?
+      cutsceneEvent: {fileID: 0}
     - audioClip: {fileID: 8300000, guid: 7717b10fa1617ce478431992ff3a23ac, type: 3}
       nextGroup: 0
       camera: {fileID: 947210940}
       subtext: "Mr. Theorist, what should we do? If your theorem says it\u2019s true
         then does it make this event inevitable?"
+      cutsceneEvent: {fileID: 0}
     iterator: 0
   - node:
     - audioClip: {fileID: 8300000, guid: 5b89e9f01bbb0c64485f220cd49624dc, type: 3}
       nextGroup: 0
       camera: {fileID: 75257939}
       subtext: Seems like, he just got a new Theorem, be quite!
+      cutsceneEvent: {fileID: 0}
     iterator: 0
   - node:
     - audioClip: {fileID: 8300000, guid: ba403eab1eeb0034ab205dfe404dc2f5, type: 3}
       nextGroup: 0
       camera: {fileID: 1017566225}
       subtext: "What\u2019s happened, Theorist? I am the one named \u201CGod\u201D."
+      cutsceneEvent: {fileID: 0}
     - audioClip: {fileID: 8300000, guid: b4bc1da5645a5f84f960bdb784f97c1a, type: 3}
       nextGroup: 0
       camera: {fileID: 1017566225}
       subtext: But excuse me, mr. Theorist, what does all that mean?
+      cutsceneEvent: {fileID: 0}
     - audioClip: {fileID: 8300000, guid: cc68469666ace4a45ba7c9ea786e6597, type: 3}
       nextGroup: 0
       camera: {fileID: 1017566225}
       subtext: I guess we'll all be reasonable and think hard about how to bypass
         the theorem, right?
+      cutsceneEvent: {fileID: 0}
     iterator: 0
   - node:
     - audioClip: {fileID: 8300000, guid: c7d31ef2b6b87d3498d951b7fec6c624, type: 3}
       nextGroup: 3
       camera: {fileID: 856938837}
       subtext: 
+      cutsceneEvent: {fileID: 0}
     - audioClip: {fileID: 8300000, guid: f7affb35c2b4b764faeac7d4f98a7854, type: 3}
       nextGroup: 1
       camera: {fileID: 856938837}
       subtext: 
+      cutsceneEvent: {fileID: 0}
     iterator: 0
   nextGroup: 0
 --- !u!82 &296460165
@@ -1198,33 +1214,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0771d137fb168584480dfaa82a21f8e6, type: 3}
---- !u!1 &827583926 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8265206809196243586, guid: 32e4090eebf4da94d80184fff513bad3,
-    type: 3}
-  m_PrefabInstance: {fileID: 2038765924}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &827583927 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8265206809196243589, guid: 32e4090eebf4da94d80184fff513bad3,
     type: 3}
   m_PrefabInstance: {fileID: 2038765924}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &827583928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827583926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25b02d3ae6832444ca2d45bbc841e6f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  freq: 3
-  phase: 0
-  amplitude: 0.05
 --- !u!1 &856938834
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,21 +2376,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8265206809196243589, guid: 32e4090eebf4da94d80184fff513bad3,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.7513
-      objectReference: {fileID: 0}
-    - target: {fileID: 8265206809196243589, guid: 32e4090eebf4da94d80184fff513bad3,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.7513
-      objectReference: {fileID: 0}
-    - target: {fileID: 8265206809196243589, guid: 32e4090eebf4da94d80184fff513bad3,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.7513
-      objectReference: {fileID: 0}
-    - target: {fileID: 8265206809196243589, guid: 32e4090eebf4da94d80184fff513bad3,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.92
       objectReference: {fileID: 0}
@@ -2446,32 +2426,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32e4090eebf4da94d80184fff513bad3, type: 3}
---- !u!1 &2038765925 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8265206808523038930, guid: 32e4090eebf4da94d80184fff513bad3,
-    type: 3}
-  m_PrefabInstance: {fileID: 2038765924}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2038765926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2038765925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 1
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1001 &2948751578995915809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2617,6 +2571,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3495106913445620387, guid: be85ce00f41d0fc48ac71b159918f995,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.20784314
+      objectReference: {fileID: 0}
     - target: {fileID: 5927641649579472196, guid: be85ce00f41d0fc48ac71b159918f995,
         type: 3}
       propertyPath: m_Pivot.x

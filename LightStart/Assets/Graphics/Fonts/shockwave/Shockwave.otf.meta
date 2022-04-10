@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 75e2ea22621f1924e85578200ffe1b46
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Shockwave
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3478431d38625bf409fc7cc1adecb0fb, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
