@@ -274,6 +274,7 @@ namespace AFPC {
         /// </summary>
         public virtual void Death () {
             if (!isAvailable) return;
+            PauseBehaviour.canPause = false;
             DeathScreen.transform.gameObject.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Deactivate();

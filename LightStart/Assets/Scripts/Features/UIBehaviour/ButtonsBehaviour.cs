@@ -2,12 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ButtonsBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private RectTransform rectTransform;
     private float _maxScaleParam = 1.2f;
     private float _scaleParam;
+
+    void Awake() 
+    {
+        /*if (rectTransform.GetComponent<Button>())
+            rectTransform.GetComponent<Button>().onClick.AddListener(delegate { 
+            rectTransform.transform.localScale = new Vector3(1, 1, 0);
+            });*/
+    }
     
     //Detect if the Cursor starts to pass over the GameObject
     public void OnPointerEnter(PointerEventData pointerEventData)
@@ -29,4 +38,5 @@ public class ButtonsBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerExi
         }
         _scaleParam = 1;
     }
+
 }

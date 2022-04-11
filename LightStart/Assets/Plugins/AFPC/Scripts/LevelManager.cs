@@ -64,11 +64,13 @@ namespace Features.Manager
 
         public static void GoMenu()
         {
+           // Time.timeScale = 1.0f;
             SceneManager.LoadScene(0);
         }
 
         public static void NextLevel() 
         {
+            //Time.timeScale = 1.0f;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
@@ -79,6 +81,7 @@ namespace Features.Manager
 
         public void Restart() 
         {
+            //Time.timeScale = 1.0f;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }

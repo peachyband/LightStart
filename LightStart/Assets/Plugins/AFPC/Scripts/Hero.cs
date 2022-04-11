@@ -40,7 +40,8 @@ public class Hero : MonoBehaviour
     private void Start()
     {
         /* a few apllication settings for more smooth. This is Optional. */
-        QualitySettings.vSyncCount = 0;
+        //QualitySettings.vSyncCount = 0;
+        //Application.targetFrameRate = 60;
         Cursor.lockState = CursorLockMode.Locked;
 
         /* Initialize lifecycle and add Damage FX */
@@ -59,7 +60,8 @@ public class Hero : MonoBehaviour
         if (LevelManager.CaptureRecord) TimerValue += Time.deltaTime;
         LevelManager.FinishResult = TimerValue;
         /* Read player input before check availability */
-        ReadInput();
+        if (!PauseBehaviour.isPaused)
+            ReadInput();
 
         /* Block controller when unavailable */
         if (!lifecycle.Availability()) return;
