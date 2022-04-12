@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -90,9 +91,9 @@ public class SettingsManager : MonoBehaviour
             settingsSliders.Sensitivity.maxValue = SettingsDefaultValues.MAX_SENSITIVITY;
 
             settingsSliders.Sensitivity.value =
-                  (!CheckFloatValues("Sencitivity", SettingsDefaultValues.MIN_SENSITIVITY, 
+                  (!CheckFloatValues("Sensitivity", SettingsDefaultValues.MIN_SENSITIVITY, 
                   SettingsDefaultValues.MAX_SENSITIVITY)) ?
-                  SettingsDefaultValues.SENSITIVITY : PlayerPrefs.GetFloat("Sencitivity");
+                  SettingsDefaultValues.SENSITIVITY : PlayerPrefs.GetFloat("Sensitivity");
 
             settingsSliders.Sensitivity.onValueChanged.AddListener(delegate {
                 ChangeSensitivity(settingsSliders.Sensitivity.value);
@@ -128,9 +129,9 @@ public class SettingsManager : MonoBehaviour
         if (hero != null)
         {
             hero.overview.sensitivity = 
-                (!CheckFloatValues("Sencitivity", SettingsDefaultValues.MIN_SENSITIVITY, 
+                (!CheckFloatValues("Sensitivity", SettingsDefaultValues.MIN_SENSITIVITY, 
                 SettingsDefaultValues.MAX_SENSITIVITY)) ?
-                SettingsDefaultValues.SENSITIVITY : PlayerPrefs.GetFloat("Sencitivity");
+                SettingsDefaultValues.SENSITIVITY : PlayerPrefs.GetFloat("Sensitivity");
 
             float fov = (!CheckFloatValues("FOV", SettingsDefaultValues.MIN_FOV, SettingsDefaultValues.MAX_FOV)) ?
                 SettingsDefaultValues.FOV : PlayerPrefs.GetFloat("FOV");
@@ -159,7 +160,7 @@ public class SettingsManager : MonoBehaviour
             settingsSliders.FOV.value = SettingsDefaultValues.FOV;
     }
 
-    public void ChangeBGMVol(System.Single val) 
+    public void ChangeBGMVol(Single val) 
     {
         if (bgm != null)
             bgm.volume = val;
@@ -167,7 +168,7 @@ public class SettingsManager : MonoBehaviour
         PlayerPrefs.SetFloat("BGMVol", val);
         PlayerPrefs.Save();
     }
-    public void ChangeVoiceVol(System.Single val)
+    public void ChangeVoiceVol(Single val)
     {
         if (voice != null)
             voice.volume = val;
@@ -181,7 +182,7 @@ public class SettingsManager : MonoBehaviour
         if (hero != null)
             hero.overview.sensitivity = val;
 
-        PlayerPrefs.SetFloat("Sencitivity", val);
+        PlayerPrefs.SetFloat("Sensitivity", val);
         PlayerPrefs.Save();
     }
 
@@ -199,7 +200,7 @@ public class SettingsManager : MonoBehaviour
 }
 
 
-[System.Serializable]
+[Serializable]
 class SettingsSliders
 {
     public Slider BgmVol;

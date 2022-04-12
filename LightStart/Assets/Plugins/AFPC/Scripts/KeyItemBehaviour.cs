@@ -8,7 +8,6 @@ namespace Plugins.AFPC.Scripts
     {
         [SerializeField] private CanvasGroup screenFade;
         [SerializeField] private LevelManager levelManager;
-
     
         private float elapsedTime;
         private float fadeDuration = 1f;
